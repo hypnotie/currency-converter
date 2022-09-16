@@ -1,0 +1,70 @@
+.header {
+	font-size: 16px;
+	border-bottom: 1px solid #fff;
+	padding: 15px;
+}
+
+.header-content {
+	max-width: 990px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title-block {
+	display: flex;
+	align-items: center;
+	cursor: default;
+
+	img {
+		width: 30px;
+	}
+
+	h1 {
+		font-weight: inherit;
+		font-size: inherit;
+		font-family: "Saira", sans-serif;
+		text-transform: uppercase;
+		margin-left: 15px;
+		margin-bottom: 0;
+		width: 100px;
+		line-height: 1.1;
+	}
+}
+
+.exchange-rates {
+	display: flex;
+}
+
+.rate {
+	color: rgb(174, 174, 174);
+	transition: all 0.2s ease;
+	cursor: default;
+	padding: 20px 0;
+	word-spacing: 3px;
+	margin: -20px 0 -20px 60px;
+
+	&:hover {
+		color: #fff;
+	}
+	
+}
+
+button {
+	background-color: #fff;
+	height: 100px;
+	width: 100px;
+}
+
+@media (max-width: 630px) {
+	.rate {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.exchange-rates {
+		flex-direction: column;
+	}
+}
